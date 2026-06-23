@@ -1,0 +1,194 @@
+SOC Team Internals
+
+## What is a SOC?
+
+A Security Operations Center (SOC) is a team responsible for monitoring, detecting, investigating, and responding to cybersecurity threats in an organization.
+
+The main goal of a SOC is to protect the organization's assets, systems, applications, and data from cyber attacks.
+
+---
+
+# SOC Team Structure
+
+A typical SOC has different levels of analysts:
+
+## Tier 1 SOC Analyst (L1)
+
+Responsibilities:
+- Monitor security alerts
+- Perform initial alert triage
+- Check logs and events
+- Identify false positives
+- Escalate suspicious incidents
+
+Common tasks:
+- Review SIEM alerts
+- Analyze IP addresses, domains, and hashes
+- Create incident tickets
+
+---
+
+## Tier 2 SOC Analyst (L2)
+
+Responsibilities:
+- Perform deeper investigation
+- Analyze attack behavior
+- Correlate multiple alerts
+- Confirm security incidents
+
+Common tasks:
+- Investigate malware activity
+- Analyze endpoint events
+- Perform threat hunting
+
+---
+
+## Tier 3 SOC Analyst (L3)
+
+Responsibilities:
+- Advanced threat investigation
+- Malware analysis
+- Threat hunting
+- Detection engineering
+- Improve security rules
+
+They handle complex incidents and advanced attacks.
+
+---
+
+## SOC Manager
+
+Responsibilities:
+- Manage SOC operations
+- Define processes
+- Coordinate with other teams
+- Track security metrics
+- Manage incident response activities
+
+---
+
+# SOC Workflow
+
+## 1. Monitoring
+
+SOC continuously monitors:
+- Network traffic
+- User activity
+- Endpoint activity
+- Security logs
+
+Tools:
+- SIEM
+- EDR
+- Network monitoring tools
+
+---
+
+## 2. Alert Detection
+
+Security tools generate alerts based on suspicious activity.
+
+Examples:
+- Multiple failed login attempts
+- Malware detected
+- Suspicious PowerShell execution
+- Unusual network connection
+
+---
+
+## 3. Alert Triage
+
+SOC analyst checks:
+
+- Is the alert real?
+- Is it a false positive?
+- What is the severity?
+- What systems are affected?
+
+---
+
+## 4. Investigation
+
+Analyst collects information:
+
+- User details
+- IP addresses
+- File hashes
+- Logs
+- Timeline of events
+
+Goal:
+Understand what happened and determine impact.
+
+---
+
+## 5. Incident Response
+
+Actions may include:
+
+- Blocking malicious IP/domain
+- Isolating infected machines
+- Removing malware
+- Resetting compromised accounts
+
+---
+
+## 6. Escalation
+
+If the incident is complex, it is escalated:
+
+L1 → L2 → L3 → Incident Response Team
+
+---
+
+# SOC Communication
+
+SOC works with:
+
+- IT Team
+- Network Team
+- System Administrators
+- Incident Response Team
+- Management
+
+Clear communication helps reduce response time.
+
+---
+
+# Common SOC Tools
+
+## SIEM
+Used for:
+- Collecting logs
+- Searching events
+- Detecting threats
+
+Examples:
+- Splunk
+- Microsoft Sentinel
+- Elastic SIEM
+
+## EDR/XDR
+Used for:
+- Endpoint monitoring
+- Detecting malicious activity
+- Responding to threats
+
+## SOAR
+Used for:
+- Automating security actions
+- Reducing manual work
+
+---
+
+# Key Takeaways
+
+A SOC analyst should understand:
+
+- How alerts are generated
+- How to investigate suspicious activity
+- How incidents are handled
+- When to escalate issues
+- How security tools work together
+
+SOC is the first line of defense against cyber threats.
